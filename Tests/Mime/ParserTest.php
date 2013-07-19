@@ -10,7 +10,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace BeSimple\Tests\SoapCommon\Soap;
+namespace BeSimple\SoapCommon\Tests;
 
 use BeSimple\SoapCommon\Mime\MultiPart;
 use BeSimple\SoapCommon\Mime\Parser;

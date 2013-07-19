@@ -10,14 +10,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace BeSimple\Tests\SoapCommon\Soap;
+namespace BeSimple\SoapCommon\Tests;
 
 use BeSimple\SoapCommon\Cache;
 use BeSimple\SoapCommon\Classmap;
 use BeSimple\SoapCommon\Converter\DateTimeTypeConverter;
 use BeSimple\SoapCommon\Converter\DateTypeConverter;
 use BeSimple\SoapCommon\Converter\TypeConverterCollection;
-use BeSimple\Tests\SoapCommon\Fixtures\SoapBuilder;
+use BeSimple\SoapCommon\Tests\Fixtures\SoapBuilder;
 
 class AbstractSoapBuilderTest extends \PHPUnit_Framework_TestCase
 {
@@ -194,7 +194,7 @@ class AbstractSoapBuilderTest extends \PHPUnit_Framework_TestCase
     {
         $builder = SoapBuilder::createWithDefaults();
 
-        $this->assertInstanceOf('BeSimple\Tests\SoapCommon\Fixtures\SoapBuilder', $builder);
+        $this->assertInstanceOf('BeSimple\SoapCommon\Tests\Fixtures\SoapBuilder', $builder);
 
         $this->assertEquals($this->mergeOptions(array('soap_version' => SOAP_1_2, 'encoding' => 'UTF-8', 'features' => SOAP_SINGLE_ELEMENT_ARRAYS)), $builder->getSoapOptions());
     }

@@ -10,10 +10,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace BeSimple\Tests\SoapCommon\Soap;
+namespace BeSimple\SoapCommon\Tests;
 
 use BeSimple\SoapCommon\Mime\PartHeader;
-use BeSimple\Tests\SoapCommon\Fixtures\MimePartHeader;
+use BeSimple\SoapCommon\Tests\Fixtures\MimePartHeader;
 
 class PartHeaderTest extends \PHPUnit_Framework_TestCase
 {

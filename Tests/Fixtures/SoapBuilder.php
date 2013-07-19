@@ -1,6 +1,6 @@
 <?php
 
-namespace BeSimple\Tests\SoapCommon\Fixtures;
+namespace BeSimple\SoapCommon\Tests\Fixtures;
 
 use BeSimple\SoapCommon\AbstractSoapBuilder;
 
