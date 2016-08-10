@@ -219,7 +219,7 @@ abstract class WsSecurityFilterClientServer
         } elseif (self::TOKEN_REFERENCE_SUBJECT_KEY_IDENTIFIER === $tokenReference && null !== $xmlSecurityKey) {
             $keyIdentifier = $filterHelper->createElement(Helper::NS_WSS, 'KeyIdentifier');
             $filterHelper->setAttribute($keyIdentifier, null, 'EncodingType', Helper::NAME_WSS_SMS . '#Base64Binary');
-            $filterHelper->setAttribute($keyIdentifier, null, 'ValueType', Helper::NAME_WSS_X509 . '#509SubjectKeyIdentifier');
+            $filterHelper->setAttribute($keyIdentifier, null, 'ValueType', Helper::NAME_WSS_X509 . '#X509SubjectKeyIdentifier');
             $securityTokenReference->appendChild($keyIdentifier);
             $certificate = $xmlSecurityKey->getX509SubjectKeyIdentifier();
             $dataNode = new \DOMText($certificate);
